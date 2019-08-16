@@ -21,9 +21,14 @@ a{
 	text-decoration: none;
 
 }
+@media (min-width: 1200px){
+	.container {
+	    max-width: 1170px;
+	}
+}
 .header{
 	width: 100%;
-	min-height: 1300px;
+	min-height: 1330px;
 	background-color:#dadada;
 }
 .header img{
@@ -50,9 +55,9 @@ a{
 	margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
-    text-align: center;
     height: auto;
-     padding-left: 15px;
+    padding-left: 15px;
+    padding-left: 25%;
 }
 .logo>img{
 	width: 170px;
@@ -68,6 +73,7 @@ a{
 	background: none !important;
 	padding-right: 10%;
 } 
+
 
 @media screen and(min-width: 1200px){
 	.bg-light{
@@ -113,11 +119,19 @@ a{
     color: white;
 }
 
+.collapse.show {
+    display: block;
+    padding-top: 20px;
+}
 @media screen and (max-width: 991px){
 	.bg-light{
 	background: none !important;
-	padding-left: 80%;
   }
+}
+.navbar-light .navbar-toggler {
+    background: white;
+    color: white;
+    margin-left: 83%;
 }
 
 .dropdown-item img{	
@@ -151,7 +165,7 @@ a{
 	top: 80%;
     position: absolute;
     width: 100%;
-    height: 125%;
+    height: 135%;
 
 }
 .dropdown-menu::after {
@@ -171,14 +185,25 @@ a{
 	position: absolute;
     z-index: 10;
     width: 100%;
-   top: 1%;
+   	top: 4%;
     height: auto;
+    padding: 0 15px;
+}
+@media screen and(max-width: 760px){
+	.content_herder {
+    top: -10%;
+
+}
 }
 .top_header{
 	width: 100%;
     background-color: white;
     line-height: 100%;
-    border-radius: 10px;
+    border-radius: 7px;
+    padding-left: 15px;
+}
+.top_header form{
+	width: 100%;
 }
 .search{
 	border-radius: 30px;
@@ -219,24 +244,29 @@ a{
 }
 .item{
 	height: 100%;
-	padding: 0 15px;
+	/*padding: 0 15px;*/
 }
 
 .information{
 	background-color: white;
+	min-height: 210px;
 }
 .center{
 	width: 100%;
     height: auto;
-    margin-left: 10%;
+ 	 padding: 0 10%;
     padding-bottom: 10%;
     padding-top: 10%;
 
 }
-.owl-carousel .owl-item img {
+ .owl-carousel .owl-item img {
     display: block;
    width: 100%;
    height: auto;
+  
+ }
+ .content-carousel .item .cl img{
+ 	border-right: 1px solid #ef6f64;
  }
  .center p{
     margin-top: 0;
@@ -261,6 +291,8 @@ a{
     background: #ef6f64;
 }
 
+
+/*content1*/
 .content1{
 	width: 100%;
 	background-color: #dadada;
@@ -342,10 +374,11 @@ a{
 }
 /*content3*/
 .content3{
+	width: 100%;
 	background-color: #ececec;
 	padding-top: 5%;
-	padding-bottom: 7%;
-	clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+	padding-bottom: 10%;
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 .introduce{
 	width: 100%;
@@ -360,6 +393,12 @@ a{
 }
 .introduce p {
 	margin-bottom: 7%;
+}
+.icon{
+	width: 100%;
+	height: auto;
+	padding:0 15px;
+	text-align: center;
 }
 .img1{
 	width: 100%;
@@ -408,16 +447,17 @@ padding-bottom: 15px;
 
 /*content5*/
 .content5{
+	width: 100%;
 	padding: 110px 0;
 	background-color: #1a1a1a;
-	clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
 }
 .classimg{
 	position:relative; 
 	width: 100%;
 }
 .classimg img{
-    width: 120%;
+    width: 100%;
     height: auto;
     margin-left: -5%;
 
@@ -427,7 +467,7 @@ padding-bottom: 15px;
     top: 25%;
     left: 5%;
     color: white;
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 .sale img{
@@ -448,7 +488,7 @@ sup {
 .from .form-group {
     margin-bottom: 2rem;
      margin-top: 0rem; 
-    padding-left: 10px;
+    padding:0 15px;
 }
 .tt{
 	color: white;
@@ -481,16 +521,15 @@ sup {
     text-align: center;
 }
 .pdrow{
-	margin-right:0;
-	margin-left: 10px;
-	margin-bottom: 30px;
+	margin: 0;
+    margin-bottom: 30px;
 }
 .a{
-	padding-right: 10px;
+	padding: 0px 15px 35px 15px;
 
 }
 .b{
-	padding-left: 10px;
+	padding: 0px 15px 35px 15px;
 }
 
 
@@ -498,6 +537,11 @@ sup {
 
 
 /*footer*/
+.content2{
+	width: 100%;
+	height: auto;
+	margin-top: 3%;
+}
 .content2-infos{
 	width: 100%;
 	height: auto;
@@ -526,15 +570,17 @@ sup {
 
 .footer{
 	background: #111111;
-	padding: 100px;
-	color: #ffffff;
+	width: 100%;
+	padding: 100px 15px 100px 15px;
 	color: #cccccc;
+
 }
 .footer i{
-	font-size: 15px;
-	margin-right: 10px;
-	float: left;
-	color: #cccccc;
+	font-size: 13px;
+    margin-right: 15px;
+    float: left;
+    color: #cccccc;
+    margin-top: 6px;
 }
 .footer p{
 	color: #7c7c7c;
@@ -564,9 +610,22 @@ sup {
 }
 .bao{
 	width: 100%;
+
 	padding: 0px;
 }
 .footer li a{
 	text-decoration: none;
 
+}
+.img-fluid{
+	width: 100%;
+}
+
+@media screen and(max-width: 767px){
+	.content_herder {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: -10%;
+    height: auto;
 }
